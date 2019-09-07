@@ -29,6 +29,7 @@ import ReportIcon from '@material-ui/icons/Report';
 
 import Home from '../pages/Home';
 // import Cards from '../pages/Cards';
+import Blogs from '../pages/Blogs';
 import Forms from '../pages/Forms';
 import Lists from '../pages/Lists';
 import Tables from '../pages/Tables';
@@ -82,6 +83,12 @@ const Routes = (props) => {
                 </ListItemIcon>
                 <ListItemText primary="Home" />
               </ListItem>
+              <ListItem button component={Link} to="/blogs">
+                <ListItemIcon>
+                  <InboxIcon />
+                </ListItemIcon>
+                <ListItemText primary="Blogs" />
+              </ListItem>
               <ListItem button component={Link} to="/tabs">
                 <ListItemIcon>
                   <InboxIcon />
@@ -124,6 +131,7 @@ const Routes = (props) => {
             {/* <div className={classes.toolbar} /> */}
             <Route exact path="/" component={Home}/>
             {/* <Route path="/cards" component={Cards}/> */}
+            <Route path="/blogs" component={Blogs}/>
             <Route path="/forms" component={Forms}/>
             <Route path="/lists" component={Lists}/>
             <Route path="/tables" component={Tables}/>
